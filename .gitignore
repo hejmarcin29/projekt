@@ -23,10 +23,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # local env files
-.env*.local
 .env
+.env.local
+.env.*.local
 
 # vercel
 .vercel
@@ -34,3 +36,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# editor
+.vscode/**/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# prisma / sqlite (lokalna baza - NIE w repo)
+data/
+*.db*
+*.sqlite
+
+# OS junk
+Thumbs.db
